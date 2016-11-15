@@ -14,4 +14,8 @@ urlpatterns = [
     # ex: /site/5/vote/
     url(r'^(?P<question_id>[0-9]+)/vote/$', views.vote, name='vote'),
     # ex: /site/giphy/cat/
+    url(r'^giphy(?P<question_id>[a-zA-Z0-9]+)/cat/$', views., name='vote'),
+    # ex: /site/giphy/cat/
+    url(r'^giphy/tally/hits/$', views.tally, name='tally'),
+    # ex: /site/giphy/tally/hits/
 ]
